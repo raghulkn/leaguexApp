@@ -49,7 +49,7 @@ const CrudSquad = () => {
     const matchsquad = useSelector(props=>props.matchsquad)
 
     const onClickHandle = (e)=>{
-        history.push(`/selectsquad/${e.target.id}`)
+        history.push(`/displaysquad/${e.target.id}`)
         dispatch(getmatchplayers(matchid))
     }
     const onSubmitHandle =(e)=>{

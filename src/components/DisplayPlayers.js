@@ -86,15 +86,16 @@ const DisplayPlayers = ({AllPlayers,EventId}) => {
     const [Credit,setCredit] = useState(100);
     const [Proceed,setProceed] = useState(false)
 
-    // const mysquad = useSelector(props=>props.matchsquad)
-    // const copysquad = JSON.parse(JSON.stringify(mysquad))
+    // const mysquad = useSelector(props=>props.matchsquad[EventId]);
+    
+    // console.log(mysquad)
     // useEffect(()=>{
-    //     console.log("mysquad",copysquad);
-    //     if(copysquad.length){
-    //         setSelectedPlayers(copysquad[EventId].squad.map(p=>p))
-    //         setCredit(100-copysquad[EventId].squad.reduce((p,c)=>c.event_player_credit+p,0))
+    //     console.log("mysquad",mysquad);
+    //     if(mysquad.length){
+    //         setSelectedPlayers(mysquad.squad.map(p=>p))
+    //         setCredit(100-mysquad.squad.reduce((p,c)=>c.event_player_credit+p,0))
     //     }
-    // },[setSelectedPlayers,copysquad,EventId])
+    // },[mysquad])
 
     useEffect(()=>{
         setDisplayPlayer(playerType.wk);
